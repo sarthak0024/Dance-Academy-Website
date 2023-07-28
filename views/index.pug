@@ -1,0 +1,59 @@
+doctype html
+html 
+  head 
+    title Sarthak Dance Academy
+    style 
+      include ../static/style.css 
+  body 
+    nav#navbar
+        ul 
+            div#logo
+                img(src="/static/img/logo4.png")
+                | SDA
+            li #[a(href='/') Home]
+            li #[a(href='/') About]
+            li #[a(href='/') Services]
+            li #[a(href='/') Contact Info]
+            li #[a(href='/') Contact Us]
+
+    section#introSecton 
+        div Welcome to Sarthak's Dance Academy 
+        div.small ABCD - Any Body Can Dance
+
+    section#missionSecton 
+        h2 Our mission
+        div.card 
+            h3 Dance perfection
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/dance1up.png")
+                div.card-content
+                    p This is the best dance academy
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/dance2.png")
+                div.card-content
+                    p This is the best dance academy
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/dance3.png")
+                div.card-content
+                    p This is the best dance academy
+
+    section#sponsorsSecton 
+        h2 Our sponsors
+        div#sponsors
+            img(src="/static/img/s1.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/s2.jpeg", alt="sponsor image", class="spImage")
+            img(src="/static/img/s3.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/s4.png", alt="sponsor image", class="spImage")
+
+    footer#footer 
+        | Copyright © 2023 SarthakDanceAcademy.com | All rights reserved
+
+    script 
+      include ../static/index.js

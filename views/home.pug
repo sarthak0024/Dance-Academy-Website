@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  scipt(src="/static/index.js")
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introSecton 
+        div Welcome to Sarthak's Dance Academy 
+        div.small ABCD - Any Body Can Dance
+
+    section#missionSecton 
+        h2 Our mission
+        div.card 
+            h3 Dance perfection
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/dance1up.png")
+                div.card-content
+                    p This is the best dance academy
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/dance2.png")
+                div.card-content
+                    p This is the best dance academy
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/dance3.png")
+                div.card-content
+                    p This is the best dance academy
+
+    section#sponsorsSecton 
+        h2 Our sponsors
+        div#sponsors
+            img(src="/static/img/s1.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/s2.jpeg", alt="sponsor image", class="spImage")
+            img(src="/static/img/s3.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/s4.png", alt="sponsor image", class="spImage")
